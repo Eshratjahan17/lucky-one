@@ -1,11 +1,19 @@
 import React from 'react';
+import WinningPhone from '../../WinningPhone/WinningPhone';
+import './Cart.css';
 
 const Cart = (props) => {
-const cart =props.cart;
+  const winningPhone =props.selectedPhone;
+const cart=props.phoneInfo;
+
   return (
-    <div>
-     <h2>Selected Phones</h2>  
-     <p>Selected Item:{cart.length}</p>
+    <div >
+      <div className='cart'>
+      <img src={cart.picture} alt="" />
+     <h3>{cart.name}</h3>
+      </div>
+    
+     
     </div>
   );
 };
