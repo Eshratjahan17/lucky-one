@@ -18,11 +18,16 @@ const Phones = () => {
    setCart(newCart);
   
  }
-//  
+  
   const [selectedPhone,setSelectedPhone]=useState([cart]);
   const randomSelect =(cart)=>{
        const winningPhone=cart[Math.floor (Math.random() * cart.length)];
        setSelectedPhone(winningPhone);
+     }
+
+     const [removePhone,setRemovePhone]=useState([]);
+     const removeAll =(cart,selectedPhone)=>{
+       
      }
 
   return (

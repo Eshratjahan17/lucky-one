@@ -1,0 +1,13 @@
+.wining-conatiner {
+  display: flex;
+  align-items: center;
+}
+.wining-conatiner img {
+  width: 150px;
+  height: 150px;
+}
+.wining-header {
+  background-color: #87ceeb;
+  padding: 10px;
+  text-align: center;
+}
