@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Phone from '../Phone/Phone';
+import Cart from './Cart/Cart';
 import './Phones.css';
 
 const Phones = () => {
@@ -10,7 +11,11 @@ const Phones = () => {
     .then(data =>setPhones(data) )
   },[]);
 
-  
+  const [cart,setCart]=useState([]);
+ const addToCart =(phone)=>{
+   const  newCart =[...cart,phone];
+   setCart(newCart);
+ }
   
   return (
    
@@ -18,6 +23,7 @@ const Phones = () => {
       <div className="phones-container">
       {
         phones.map(phone =><Phone 
+          addToCart={addToCart}
           key={phone.id}
           phone={phone}
         ></Phone>
@@ -26,7 +32,7 @@ const Phones = () => {
       }
       </div>
       <div className="cart-container">
-        <h3>Cart</h3>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );

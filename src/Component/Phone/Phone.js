@@ -4,6 +4,7 @@ import React from 'react';
 import './Phone.css';
 
 const Phone = (props) => {
+  
   const {picture,name,price}=props.phone;
   return (
     <div className='phone-container'>
@@ -13,7 +14,7 @@ const Phone = (props) => {
         <p>Price:${price}</p>
 
       </div>
-      <button className='cart-btn'><p>Add To Cart</p>
+      <button onClick={()=>props.addToCart(props.phone)} className='cart-btn'><p>Add To Cart</p>
       <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
       </button>
     </div>
