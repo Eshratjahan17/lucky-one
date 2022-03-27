@@ -9,6 +9,8 @@ const Phones = () => {
     .then(res => res.json())
     .then(data =>setPhones(data) )
   },[]);
+
+  
   
   return (
    
