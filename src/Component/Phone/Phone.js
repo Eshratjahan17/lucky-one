@@ -1,3 +1,5 @@
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Phone.css';
 
@@ -11,7 +13,9 @@ const Phone = (props) => {
         <p>Price:${price}</p>
 
       </div>
-      <button>Add To Cart</button>
+      <button className='cart-btn'><p>Add To Cart</p>
+      <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
+      </button>
     </div>
   );
 };
