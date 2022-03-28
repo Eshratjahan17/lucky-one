@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Lucky Phone winner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project live site link [live site](https://luckyphonewinner.netlify.app/).
 
 ## Available Scripts
 
