@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Phone from '../Phone/Phone';
 import WinningPhone from '../WinningPhone/WinningPhone';
-import Cart from './Cart/Cart';
 import './Phones.css';
+
 
 const Phones = () => {
   const [phones,setPhones]=useState([]);
@@ -65,6 +66,7 @@ const Phones = () => {
           
           phoneInfo={phoneInfo}
           ></Cart>)
+
       }
    
       <button onClick={()=>randomSelect(cart)} className='select-btn'><p>Choose one</p></button>
