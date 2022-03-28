@@ -1,5 +1,4 @@
 import React from 'react';
-import WinningPhone from '../../WinningPhone/WinningPhone';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -7,7 +6,7 @@ const Cart = (props) => {
 const cart=props.phoneInfo;
 
   return (
-    <div >
+    <div  id='cart'>
       <div className='cart'>
       <img src={cart.picture} alt="" />
      <h3>{cart.name}</h3>

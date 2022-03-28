@@ -1,8 +1,8 @@
-.wining-conatiner {
+.wining-phone {
   display: flex;
   align-items: center;
 }
-.wining-conatiner img {
+.wining-phone img {
   width: 150px;
   height: 150px;
 }

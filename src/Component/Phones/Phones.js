@@ -18,17 +18,21 @@ const Phones = () => {
    setCart(newCart);
   
  }
+  //select random phone
+  const [selectedPhone,setSelectedPhone]=useState([]);
   
-  const [selectedPhone,setSelectedPhone]=useState([cart]);
   const randomSelect =(cart)=>{
+       
        const winningPhone=cart[Math.floor (Math.random() * cart.length)];
        setSelectedPhone(winningPhone);
      }
-
+     console.log(selectedPhone);
+//remove all
      const [removePhone,setRemovePhone]=useState([]);
-     const removeAll =(cart,selectedPhone)=>{
-       
-     }
+    const chooseAgain=(cart)=>{
+      const emptyCart=cart.splice(0);
+      setRemovePhone(emptyCart);
+    }
 
   return (
    
@@ -54,9 +58,10 @@ const Phones = () => {
           phoneInfo={phoneInfo}
           ></Cart>)
       }
-    <WinningPhone selectedPhone={selectedPhone}></WinningPhone>
+   
       <button onClick={()=>randomSelect(cart)} className='select-btn'><p>Choose one</p></button>
-      <button className='select-btn'><p>Chose Again</p></button>
+      <button onClick={()=>chooseAgain(cart)} className='select-btn'><p>Chose Again</p></button>
+      <WinningPhone selectedPhone={selectedPhone}></WinningPhone>
       </div>
     </div>
   );
