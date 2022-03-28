@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Phone from '../Phone/Phone';
+import Q_a from '../QA/Q_a';
 import WinningPhone from '../WinningPhone/WinningPhone';
 import './Phones.css';
 
@@ -57,6 +58,7 @@ const Phones = () => {
          
         )
       }
+      <Q_a></Q_a>
       </div>
       <div className="cart-container">
       <h2>Selected Phones</h2>  

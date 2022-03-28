@@ -1,0 +1,9 @@
+.question {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px gainsboro;
+}
